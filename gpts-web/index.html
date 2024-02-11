@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>ArtMinDeFree GPTs</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            background: #dbf7da;
+            background-image: url('img/7e45a01ba174d8ccd294b5b3b8b5cfdf.png');
+            background-attachment: fixed;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+        }
+        .container {
+            padding: 2rem;
+        }
+        .container-fluid {
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            background-color: #f8a2a241;
+            /* background-color: transparent; */
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 30px #000000;
+            border-radius: 25px;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-shadow: 0 0 1px #000;
+            font-size: 2em;
+            margin-top: 20px;
+            position: relative;
+        }
+        .logo img {
+            width: 100px;
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+            border-radius: 50px;
+            margin-right: 10px;
+            box-shadow: 0 0 20px #000000a1;
+        }
+        .logo span.subtitle {
+            font-size: .5em;
+            position: absolute;
+            left: 130px;
+            top: 72px;
+        }
+        .nav-list li a {
+            background-color: #ffe047a1;
+            backdrop-filter: blur(30px);
+            background-color: #e8f8a241;
+            box-shadow: 0 0 20px #000000;
+            border-radius: 10px;
+            color: #333;
+            text-shadow: 1px 1px 1px #fff;
+            padding: 10px 20px;
+            font-size: 1.3em;
+        }
+        .nav-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .grid section {
+            background-color: #f8a2a241;
+            backdrop-filter: blur(20px);
+            text-align: center;
+            box-shadow: 0 0 30px #00000096;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+        .grid section>* {
+            padding: 10px;
+        }
+        .headings>:last-child, hgroup>:last-child {
+            color: hsl(0deg 0% 0% / 77%);
+        }
+        .grid section hgroup img {
+            width: 80px;
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+            border-radius: 50px;
+            margin: 20px;
+            box-shadow: 0 0 7px #00000073;
+        }
+        .grid section hgroup h2 {
+            margin-bottom: 0px;
+        }
+        .grid section p {
+            font-size: .8em;
+        }
+        .grid section button {
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 1px 2px #22222291;
+            margin-bottom: 0;
+            background-color: #5869e7d1;
+            background: linear-gradient(45deg, #4d4082, #a168e3e3);
+            border: none;
+            transition: all .1s;
+            font-size: 0.9em;
+        }
+        .grid section button:hover {
+            transform: scale(1.05);
+        }
+        footer small {
+            color: #000;
+            text-decoration: underline;
+        }
+        footer small a {
+            color: #0000006e;
+        }
+    </style>
+    <script>
+        function confirmNavigation(event, url) {
+            event.preventDefault();
+            const isConfirmed = confirm("Are you sure you want to navigate to this GPT?");
+            if (isConfirmed) {
+                window.location.href = url;
+            }
+        }
+    </script>
+</head>
+<body>
+<nav class="container-fluid">
+    <ul>
+        <li><strong>
+            <a href="https://www.instagram.com/artmindefree/" target="_blank" class="logo"> 
+                <img src="img/logo.WEBP" alt="logo">AMDF GPTs 
+                <span class="subtitle">artmindefree</span>
+            </a>
+        </strong></li>
+    </ul>
+<!--     <ul class="nav-list">
+        <li><a href="#memory-bank">Memory Bank</a></li>
+        <li><a href="#mindful-harmony">Mindful Harmony</a></li>
+        <li><a href="#news-visualizer">News Visualizer</a></li>
+        <li><a href="#elementvar">ElementVar</a></li>
+    </ul> -->
+</nav>
+<main class="container">
+    <div class="grid">
+        <section id="memory-bank">
+            <hgroup>
+                <img src="img/icon/1.png" alt="Memory Bank">
+                <h2>Memory Bank</h2>
+                <h3>Your personal memory assistant</h3>
+            </hgroup>
+            <p>A GPT designed to help you remember and organize your thoughts.</p>
+            <button onclick="confirmNavigation(event, 'https://chat.openai.com/g/g-UfSxZR8jf-memory-bank')">Visit Memory Bank</button>
+        </section>
+        <section id="mindful-harmony">
+            <hgroup>
+                <img src="img/icon/2.png" alt="Mindful Harmony">
+                <h2>Mindful Harmony</h2>
+                <h3>Mindfulness and meditation guide</h3>
+            </hgroup>
+            <p>A GPT to assist you in your journey towards mindfulness and inner peace.</p>
+            <button onclick="confirmNavigation(event, 'https://chat.openai.com/g/g-nsG0zvbhv-mindful-harmony')">Visit Mindful Harmony</button>
+        </section>
+        <section id="news-visualizer">
+            <hgroup>
+                <img src="img/icon/3.png" alt="News Visualizer">
+                <h2>News Visualizer</h2>
+                <h3>Visual insights into current news</h3>
+            </hgroup>
+            <p>A GPT that transforms news stories into engaging visual narratives.</p>
+            <button onclick="confirmNavigation(event, 'https://chat.openai.com/g/g-5yzGl47Pl-news-visualizer')">Visit News Visualizer</button>
+        </section>
+        <section id="elementvar">
+            <hgroup>
+                <img src="img/icon/4.png" alt="ElementVar">
+                <h2>ElementVar</h2>
+                <h3>Exploring the elements of the universe</h3>
+            </hgroup>
+            <p>A GPT dedicated to teaching about the elements in an interactive way.</p>
+            <button onclick="confirmNavigation(event, 'https://chat.openai.com/g/g-vGWCdCSeL-elementvar')">Visit ElementVar</button>
+        </section>
+    </div>
+</main>
+<footer class="container">
+    <small>© 2024 AMDF <a href="https://www.instagram.com/artmindefree/" target="_blank">Artmindefree</a>. All rights reserved.</small>
+</footer>
+</body>
+</html>
